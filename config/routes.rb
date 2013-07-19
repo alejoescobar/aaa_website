@@ -1,4 +1,7 @@
 AAAWebsite::Application.routes.draw do
+  resources :events
+
+
   root :to => 'aaacore#index'
 
   match "/events", to: "aaacore#events"
